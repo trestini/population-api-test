@@ -18,7 +18,7 @@ Swaggerize(Server, {
     handlers: Path.resolve('./handlers')
 });
 
-let port = process.env.port || 8000;
+let port = process.env.port || process.env.PORT || 8000;
 
 Server.listen(port, function () {
     Server.swagger.api.host = Server.address().address + ':' + Server.address().port;
