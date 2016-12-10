@@ -7,7 +7,6 @@ info:
   contact:
     name: rafael.trestini@viverebrasil.com.br
   termsOfService: 'https://slackshowcase.viverebrasil.com.br/about.html'
-host: 'localhost:8000'
 basePath: /v1
 schemes:
   - https
