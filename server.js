@@ -23,6 +23,6 @@ let port = process.env.port || 8000;
 Server.listen(port, function () {
     Server.swagger.api.host = Server.address().address + ':' + Server.address().port;
     /* eslint-disable no-console */
-    console.log('App running on %s:%d', Server.address().address, Server.address().port);
+    console.log('App running on %s:%d', Server.address().address, Server.address().port || port);
     /* eslint-disable no-console */
 });
